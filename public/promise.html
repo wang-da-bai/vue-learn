@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>Promise</title>
+  </head>
+  <body>
+    <script>
+      // resolve , reject ,all ract
+      //resolve === then, reject === catch
+      let promise = new Promise((resolve, reject) => {
+        resolve();
+      });
+      promise
+        .then((response) => {
+          console.log("成功");
+        })
+        .catch((error) => {
+          console.log("失败");
+        });
+
+      //链式
+      function promise(status) {
+        return new Promise((resolve, reject) => {
+          if (status) {
+            console.log("第一个promise成功");
+            resolve("第一个promise数据返回成功");
+          }
+          if (!status) {
+            console.log("第二个promise成功");
+            reject();
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
