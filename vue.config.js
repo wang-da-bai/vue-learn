@@ -51,13 +51,13 @@ module.exports = {
           '^/dev-api': ''
         }
       },
-      '/img': {
-        target: 'http://qizhen.tpddns.cn:11010/sthx',
+      '/news': {
+        target: 'https://www.web-jshtml.cn/productApi',
         ws: true,
         changOrigin: true,
-        pathRewrite: {
-          '^/img': ''
-        }
+        // pathRewrite: {
+        //   '^/new-info': ''
+        // }
       }
     }
     // before: require('./mock/mock-server.js')

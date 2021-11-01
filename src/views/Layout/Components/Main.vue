@@ -1,7 +1,6 @@
 <template>
   <div id="main-wrap">
     <div class="main-content">
-      {{bbb}}
       <router-view />
     </div>
   </div>

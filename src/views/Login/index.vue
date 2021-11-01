@@ -44,7 +44,6 @@
 <script>
 import { encryption } from '@/utils'
 import { reactive,ref, getCurrentInstance,unref} from 'vue'
-import axios from 'axios'
 export default {
   name: 'Login',
   setup() {
