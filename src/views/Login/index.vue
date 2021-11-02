@@ -160,7 +160,7 @@ export default {
       font-size: 25px;
       &:hover {
         // background: $button-hover;
-        color: #fff;
+        // color: #fff;
         cursor: pointer;
       }
     }
